@@ -76,7 +76,7 @@ class AdsPageState extends State<AdsPage> {
 
   void _loadRewardedVideoAd() {
     FacebookRewardedVideoAd.loadRewardedVideoAd(
-      placementId: "IMG_16_9_APP_INSTALL#2312433698835503_2650502525028617",
+      placementId: "VID_HD_9_16_39S_APP_INSTALL#2312433698835503_2650502525028617",
       listener: (result, value) {
         print("Rewarded Ad: $result --> $value");
         if (result == RewardedVideoAdResult.LOADED) _isRewardedAdLoaded = true;

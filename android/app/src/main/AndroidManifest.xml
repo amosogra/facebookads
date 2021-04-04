@@ -8,6 +8,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:label="facebook_audience_network_example"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
