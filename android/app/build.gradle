@@ -47,6 +47,14 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
+        debug{
+            signingConfig signingConfigs.debug
+            //applicationIdSuffix ".dev"
+            //resValue "string", "app_name", "Lite Spotify Debug"
+            ndk {
+                abiFilters 'arm64-v8a'//, /'armeabi-v7a'//, 'arm64-v8a'
+            }
+        }
     }
 }
 
