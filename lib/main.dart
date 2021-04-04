@@ -50,7 +50,7 @@ class AdsPageState extends State<AdsPage> {
     super.initState();
 
     FacebookAudienceNetwork.init(
-      testingId: "b9f2908b-1a6b-4a5b-b862-ded7ce289e41",
+      //testingId: "b9f2908b-1a6b-4a5b-b862-ded7ce289e41",
     );
 
     _loadInterstitialAd();
@@ -79,7 +79,7 @@ class AdsPageState extends State<AdsPage> {
 
   void _loadRewardedVideoAd() {
     FacebookRewardedVideoAd.loadRewardedVideoAd(
-      placementId: "YOUR_PLACEMENT_ID",
+      //placementId: "YOUR_PLACEMENT_ID",
       listener: (result, value) {
         print("Rewarded Ad: $result --> $value");
         if (result == RewardedVideoAdResult.LOADED) _isRewardedAdLoaded = true;
@@ -195,7 +195,7 @@ class AdsPageState extends State<AdsPage> {
 
   Widget _nativeBannerAd() {
     return FacebookNativeAd(
-      // placementId: "IMG_16_9_APP_INSTALL#2312433698835503_2964953543583512",
+      placementId: "IMG_16_9_APP_INSTALL#2312433698835503_2964953543583512",
       adType: NativeAdType.NATIVE_BANNER_AD,
       bannerAdSize: NativeBannerAdSize.HEIGHT_100,
       width: double.infinity,
